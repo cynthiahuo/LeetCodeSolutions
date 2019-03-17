@@ -41,7 +41,10 @@ namespace LeetCodeConsoleApp
         /// <param name="inputArray"></param>
         public static void SearchArrayPrintDup(int[] inputArray)
         {
+            for (int i =0; i< inputArray.Length;i++)
+            {
 
+            }
         }
     }
 }

@@ -16,10 +16,20 @@ namespace LeetCodeConsoleApp
             //SearchAscArray.SearchAscArrayAndPrint(testArray, sum);
             //Console.ReadLine();
 
-            //Reverse Hello World to World Hello
-            string orgionalString = "Hello World";
-            ReverseString.ReverseHelloWorldString(orgionalString);
+            ////Reverse Hello World to World Hello
+            //string orgionalString = "Hello World";
+            //ReverseString.ReverseHelloWorldString(orgionalString);
+            //Console.ReadLine();
+
+            ////Reverse string with more than two words like "Hello World There You Are"
+            string orgionalString = "Hello World There You Are";
+            ReverseString.ReverseStrings(orgionalString);
             Console.ReadLine();
+
+            ////Search array and print all duplicate elements
+            //int[] inputArray = new int[8] { 4, 3, 2, 7, 8, 2, 3, 1 };
+            //SearchArray.SearchArrayPrintDup(inputArray);
+            //Console.ReadLine();
         }
     }
 }
