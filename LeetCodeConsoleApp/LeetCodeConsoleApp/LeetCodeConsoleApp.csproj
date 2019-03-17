@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="ReverseString.cs" />
-    <Compile Include="SearchAscArray.cs" />
+    <Compile Include="SearchArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
