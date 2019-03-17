@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeConsoleApp
 {
-    public static class SearchAscArray
+    public static class SearchArray
     {
         /// <summary>
         /// Given a sorted ascending array and a number x, find the pair in array whose sum is closest to x
@@ -33,6 +33,15 @@ namespace LeetCodeConsoleApp
                     break;
             }
             Console.WriteLine("The final result is {0} and  {1}", ascArray[leftIndex], ascArray[rightIndex]);
+        }
+
+        /// <summary>
+        /// Search Array and print all duplicate elements
+        /// </summary>
+        /// <param name="inputArray"></param>
+        public static void SearchArrayPrintDup(int[] inputArray)
+        {
+
         }
     }
 }
