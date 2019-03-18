@@ -34,16 +34,35 @@ namespace LeetCodeConsoleApp
             }
             Console.WriteLine("The final result is {0} and  {1}", ascArray[leftIndex], ascArray[rightIndex]);
         }
+        /// <summary>
+        /// Search Array and print all duplicate elements
+        /// </summary>
+        /// <param name="inputArray"></param>
+        public static void SearchArrayPrintDupDict(int[] inputArray)
+        {
+            //Dictionary
+            var dictionary = new Dictionary<int, int>();
+            foreach (var element in inputArray)
+            {
+                dictionary[element] = (dictionary.ContainsKey(element) ? dictionary[element] : 0) + 1;
+            }
+
+            foreach (var pair in dictionary)
+            {
+                Console.WriteLine(pair.Key + " repeats " + (pair.Value - 1) + " times when using Dictionary");
+            }
+        }
 
         /// <summary>
         /// Search Array and print all duplicate elements
         /// </summary>
         /// <param name="inputArray"></param>
-        public static void SearchArrayPrintDup(int[] inputArray)
+        public static void SearchArrayPrintDupLINQ(int[] inputArray)
         {
-            for (int i =0; i< inputArray.Length;i++)
+            //LINQ
+            foreach (var number in inputArray.GroupBy(x => x))
             {
-
+                Console.WriteLine(number.Key + " repeats " + (number.Count() - 1) + " times when using LINQ");
             }
         }
     }
