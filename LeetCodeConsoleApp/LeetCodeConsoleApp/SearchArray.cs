@@ -41,13 +41,13 @@ namespace LeetCodeConsoleApp
         public static void SearchArrayPrintDupDict(int[] inputArray)
         {
             //Dictionary
-            var dictionary = new Dictionary<int, int>();
+            var dic = new Dictionary<int, int>();
             foreach (var element in inputArray)
             {
-                dictionary[element] = (dictionary.ContainsKey(element) ? dictionary[element] : 0) + 1;
+                dic[element] = (dic.ContainsKey(element) ? dic[element] : 0) + 1;
             }
 
-            foreach (var pair in dictionary)
+            foreach (var pair in dic)
             {
                 Console.WriteLine(pair.Key + " repeats " + (pair.Value - 1) + " times when using Dictionary");
             }
